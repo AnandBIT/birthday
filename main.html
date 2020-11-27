@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <div class="homepage">
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <div class="homepage animate-bottom" id="myDiv" style="display: none;">
         <img src="img/Homepage bg.png" alt="Snow Background" class="back">
         <div class="main__board">
             <div class="board">
@@ -28,13 +28,29 @@
                         <img src="img/b3.png" alt="Special Zone Board" class="b3-img">
                     </a>
                 </div>
-
             </div>
+        </div>
 
+        <div class="birthday__board">
+            <img src="img/hbd.png" alt="Happy Birthday Beautiful" class="bday-img">
         </div>
     </div>
 
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
 </body>
-<script src="js/scripts.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script src="js/scripts.js"></script> -->
 
 </html>

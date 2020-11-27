@@ -6,13 +6,62 @@
     margin: 0;
 }
 
+/* ---------- LOADER ------------ */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+/* -------------------------------------------*/
+
 .homepage {
     position: relative;
-    /* background-image: url("../img/Homepage\ bg.png"); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    /* background-attachment: fixed; */
     width: 100%;
     height: 100vh;
 }
@@ -40,15 +89,15 @@
     position: absolute;
     top: 0;
     right: 10%;
-    animation: swing 1s;
+    animation: swing 1s linear 1s;
 }
 
 .main__board .board {
-    animation-delay: 1s;
+    animation-delay: 2.3s;
 }
 
 .coa {
-    height: 350px;
+    height: 320px;
     width: 250px;
     transform: translateY(-30px);
     position: relative;
@@ -66,7 +115,7 @@
 }
 
 .b2 {
-    transform: translateY(-65%);
+    transform: translateY(-67%);
 }
 
 .b3 {
@@ -76,12 +125,25 @@
 .b1-img,
 .b2-img,
 .b3-img {
-    height: 65px;
-    width: 170px;
+    height: 68px;
+    width: 150px;
 }
 
-.b2-img{
+.b2-img {
     height: 90px;
+}
+
+.birthday__board {
+    height: 100px;
+    width: 650px;
+    position: absolute;
+    top: 28%;
+    left: 22%;
+}
+
+.bday-img {
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes pulsate {
