@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <div class="homepage">
+<body onload="myFunction()">
+    <div id="loader"></div>
+    <div class="homepage animate-bottom" id="myDiv" style="display: none;">
         <img src="img/Homepage bg.png" alt="Snow Background" class="back">
         <div class="board">
             <a href="main.html">
@@ -17,6 +18,19 @@
             </a>
         </div>
     </div>
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 
 </body>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->

@@ -37,8 +37,7 @@
 /* Add animation to "page content" */
 .animate-bottom {
     position: relative;
-    animation-name: animatebottom;
-    animation-duration: 1s
+    animation: animatebottom 1s;
 }
 
 @keyframes animatebottom {
@@ -89,7 +88,7 @@
     position: absolute;
     top: 0;
     right: 10%;
-    animation: swing 1s linear 1s;
+    animation: slide 1s linear 1s;
 }
 
 .main__board .board {
@@ -160,7 +159,7 @@
     }
 }
 
-@keyframes swing {
+@keyframes slide {
     0% {
         transform: translateY(-250px);
         opacity: 0;
