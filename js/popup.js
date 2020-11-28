@@ -13,7 +13,7 @@ closePopup = function () {
 
 var btn = $(".popup-btn").click(displayPopup);
 var closeBox = $(".close__box").click(closePopup);
-modal.style.display = "block";
+// modal.style.display = "block";
 
 
 window.onclick = function (event) {
