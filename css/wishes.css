@@ -174,9 +174,9 @@ body {
 .back-box{
     position: absolute;
     right: 5%;
-    top: 5%;
-    height: 8rem;
-    width: 10rem;
+    top: 0;
+    height: 10rem;
+    width: 12rem;
     z-index: 3;
     animation: vibrate 2s linear infinite alternate;
 }
