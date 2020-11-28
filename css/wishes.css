@@ -137,6 +137,7 @@ body {
 .close__box:focus {
     background-color: rgb(238, 64, 64);
     cursor: pointer;
+    border: none;
 }
 
 .close-btn {
