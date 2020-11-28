@@ -73,17 +73,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    animation: infinite-slide 2s linear infinite;
-}
-
-@keyframes infinite-slide{
-    0%{
-        transform: translateY(-200px);
-    }
-
-    100%{
-        transform: translateY(20px);
-    }
+    animation: infinite-slide 3s linear infinite;
 }
 
 .back {
@@ -96,7 +86,7 @@
     top: 0;
     right: 10%;
     z-index: 100;
-    animation: pulsate 1s linear infinite;
+    animation: pulsate 1.5s linear infinite;
     animation-direction: alternate;
 }
 
@@ -110,11 +100,11 @@
     position: absolute;
     top: 0;
     right: 10%;
-    animation: slide 1s linear 1s;
+    animation: slide 2s linear 1s;
 }
 
 .main__board .board {
-    animation-delay: 2.3s;
+    animation-delay: 3.3s;
 }
 
 .coa {
@@ -194,7 +184,12 @@
     }
 }
 
-/* -------- WISHES Page ---------- */
-.wishes{
-    
+@keyframes infinite-slide{
+    0%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(20%);
+    }
 }
