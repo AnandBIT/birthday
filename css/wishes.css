@@ -174,7 +174,7 @@ body {
 .back-box{
     position: absolute;
     right: 5%;
-    top: 0;
+    top: -1%;
     height: 10rem;
     width: 12rem;
     z-index: 3;
