@@ -1,23 +1,18 @@
-var modal = document.getElementById("popup__box");
+$("#popup__box").toggle();
 
 displayPopup = function () {
-    window.setTimeout(function () {
-        modal.style.display = "block";
-    }, 100);
-
+    $("#popup__box").fadeIn();
 };
 
 closePopup = function () {
-    modal.style.display = "none";
+    $("#popup__box").fadeOut();
 };
 
 var btn = $(".popup-btn").click(displayPopup);
 var closeBox = $(".close__box").click(closePopup);
-// modal.style.display = "block";
-
 
 window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == document.getElementById("popup__box")) {
+        $("#popup__box").fadeOut();
     }
 };
