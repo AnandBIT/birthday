@@ -66,9 +66,10 @@
     overflow: hidden;
 }
 
-.snowFall::after{
+.snowFall::after {
     content: url("../img/Snow.svg");
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -85,9 +86,8 @@
     position: absolute;
     top: 0;
     right: 10%;
-    z-index: 100;
-    animation: pulsate 1.5s linear infinite;
-    animation-direction: alternate;
+    transform: translateX(-30px);
+    animation: pulsate 1.5s linear infinite alternate forwards;
 }
 
 .getting-started {
@@ -100,7 +100,9 @@
     position: absolute;
     top: 0;
     right: 10%;
-    animation: slide 2s linear 1s;
+    opacity: 0;
+    z-index: 20;
+    animation: slide 1.8s linear 1s forwards;
 }
 
 .main__board .board {
@@ -112,7 +114,6 @@
     width: 250px;
     transform: translateY(-30px);
     position: relative;
-    z-index: 10;
 }
 
 .board__inner {
@@ -151,6 +152,18 @@
     top: 28%;
     left: 22%;
     z-index: 100;
+    opacity: 0;
+    animation: fade 2s linear 1s forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .bday-img {
@@ -184,12 +197,12 @@
     }
 }
 
-@keyframes infinite-slide{
-    0%{
+@keyframes infinite-slide {
+    0% {
         transform: translateY(-20px);
     }
 
-    100%{
+    100% {
         transform: translateY(20%);
     }
 }
