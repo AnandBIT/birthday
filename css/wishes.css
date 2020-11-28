@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    /* overflow: hidden; */
+    /* background-image: url("../img/bg3.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.wishes-background {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wishes-background > img:first-child{
+    height: 108%;
+    width: 100%;
+}
+
+.leaf-1, .leaf-2{
+    width: 100%;
+    height: 100%;
+}
+
+.box-1{
+    position: absolute;
+    left: 9%;
+    top: 6rem;
+    width: 3rem;
+    height: 4.5rem;
+    transform: rotate(5deg);
+}
+
+.box-2{
+    position: absolute;
+    left: 45%;
+    top: 2rem;
+    width: 4rem;
+    height: 6rem;
+    transform: rotate(100deg);
+}
+
+.box-3{
+    position: absolute;
+    right: 20%;
+    top: 8rem;
+    width: 5rem;
+    height: 7.5rem;
+    transform: rotate(7deg);
+}
+
+.box-4{
+    position: absolute;
+    left: 18%;
+    top: 15rem;
+    width: 6rem;
+    height: 9rem;
+    transform: rotate(2deg);  
+}
+
+.box-5{
+    position: absolute;
+    right: 25%;
+    top: 21rem;
+    width: 4rem;
+    height: 6rem;
+    transform: rotate(-90deg);
+}
+
+.box-6{
+    position: absolute;
+    width: 2.5rem;
+    height: 3.5rem;
+    bottom: 5%;
+    left: 39%;
+    transform: rotate(50deg);
+}
+
+.box-7{
+    position: absolute;
+    width: 1.8rem;
+    height: 3rem;
+    bottom: 2%;
+    left: 45%;
+    transform: rotate(-75deg);
+}
+
+.box-8{
+    position: absolute;
+    width: 2rem;
+    height: 3rem;
+    bottom: 3%;
+    right: 18%;
+    transform: rotate(-135deg);
+}
