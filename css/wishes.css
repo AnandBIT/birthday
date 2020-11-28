@@ -215,7 +215,7 @@ body {
     z-index: 3;
     opacity: 0;
     transform: translateX(-20px);
-    animation: fade 1s linear 2s forwards, vibrate 2s linear 3s infinite alternate forwards;
+    animation: fade 1s linear 12s forwards, vibrate 2s linear 13s infinite alternate forwards;
 }
 
 .back-btn {
