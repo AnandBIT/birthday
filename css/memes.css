@@ -15,21 +15,22 @@ body {
 
 #loader {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    /* left: 50%; */
+    /* top: 50%; */
     z-index: 1;
-    width: 500px;
-    height: 500px;
-    border: 10px solid lightblue;
-    border-radius: 50%;
-    transform: translate(-43%, 20%);
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    /* border: 10px solid lightblue; */
+    /* border-radius: 50%; */
+    /* transform: translate(40%, 0); */
 }
 
 .flashBack {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     object-fit: cover;
 }
 
