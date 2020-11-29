@@ -142,14 +142,26 @@ body {
     backdrop-filter: blur(8px) brightness(70%);
     -webkit-backdrop-filter: blur(8px) brightness(70%);
     display: flex;
+    justify-content: center;
+
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.25);
+}
+
+.popup__box-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: 85%;
+    width: 50%;
+    transform: translateY(6%);
 }
 
 .popup__box-background {
-    height: 85%;
-    width: 50%;
+    height: 90%;
+    width: 90%;
 }
 
 .popup__box-img {
@@ -244,5 +256,29 @@ body {
 
     100% {
         transform: translateX(20px);
+    }
+}
+
+.zoomIn {
+    animation: zoomIn .4s linear forwards;
+}
+
+.zoomOut {
+    animation: zoomOut .3s linear forwards;
+}
+
+@keyframes zoomIn {
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(.25);
     }
 }
