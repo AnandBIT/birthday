@@ -9,7 +9,12 @@
 </head>
 
 <body onload="myFunction()">
-    <div id="loader"></div>
+    <div id="loader">
+        <video autoplay class="flashBack">
+            <source src="video/My Movie 3.mp4" type="video/mp4" class="flashBack">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <div class="homepage animate-bottom" id="myDiv" style="display: none;">
         <img src="img/Homepage bg.png" alt="Snow Background" class="back">
         <div class="board">
@@ -23,7 +28,7 @@
         var myVar;
 
         function myFunction() {
-            myVar = setTimeout(showPage, 3000);
+            myVar = setTimeout(showPage, 3100);
         }
 
         function showPage() {
@@ -33,7 +38,5 @@
     </script>
 
 </body>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-<script src="js/scripts.js"></script>
 
 </html>
