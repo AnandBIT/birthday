@@ -274,6 +274,7 @@ body {
     height: 10rem;
     width: 12rem;
     z-index: 3;
+    visibility: hidden;
     opacity: 0;
     transform: translateX(-20px);
     animation: fade 1s linear 12s forwards, vibrate 2s linear 13s infinite alternate forwards;
@@ -286,10 +287,12 @@ body {
 
 @keyframes fade {
     0% {
+        visibility: visible;
         opacity: 0;
     }
 
     100% {
+        visibility: visible;
         opacity: 1;
     }
 }
