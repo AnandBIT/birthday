@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Get Started</title>
+    <link rel="stylesheet" href="css/special.css">
+</head>
+
+<body>
+    <div id="loader">
+        <video autoplay class="flashBack" loop>
+            <source src="video/My Movie 3.mp4" type="video/mp4" class="flashBack">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="homepage animate-bottom" id="myDiv">
+        <img src="img/special-bg.jpeg" alt="Special Background" class="back">
+        <a href="https://drive.google.com/drive/folders/1y4STCecF-iR-g5zB-BRM8Wf5fBJjKsyq?usp=sharing"
+            class="special-btn">
+            <img src="img/special-btn.png" alt="Special Button" class="special-img">
+        </a>
+    </div>
+
+</body>
+
+<script>
+    window.onload = function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    };
+</script>
+
+</html>
