@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+    <title>Let's Get Started</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -24,19 +24,13 @@
         </div>
     </div>
 
-    <script>
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 3100);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
-
 </body>
+
+<script>
+    window.onload = function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    };
+</script>
 
 </html>
