@@ -160,6 +160,15 @@ body {
     transform: rotate(-135deg);
 }
 
+.box-9 {
+    position: absolute;
+    left: 25%;
+    bottom: 5rem;
+    width: 4rem;
+    height: 6rem;
+    transform: rotate(40deg);
+}
+
 .box-1,
 .box-2,
 .box-3,
@@ -167,7 +176,8 @@ body {
 .box-5,
 .box-6,
 .box-7,
-.box-8 {
+.box-8,
+.box-9 {
     z-index: 10;
 }
 

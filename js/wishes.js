@@ -27,6 +27,8 @@ var btn = $(".popup-btn").click(function (event) {
         $(".popup__box-img").attr("src", "img/card7.png");
     else if (x == "box-8")
         $(".popup__box-img").attr("src", "img/card8.png");
+    else if (x == "box-9")
+        $(".popup__box-img").attr("src", "img/card9.png");
 
     $("#popup__box").addClass("zoomIn");
     $("#popup__box").removeClass("zoomOut");
