@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/memes.css">
 </head>
 
-<body onload="myFunction()">
+<body>
     <div id="loader">
         <video autoplay class="flashBack" loop>
             <source src="video/My Movie 3.mp4" type="video/mp4" class="flashBack">
@@ -142,16 +142,10 @@
 <!-- <script src="js/popup.js"></script> -->
 
 <script>
-    var myVar;
-
-    function myFunction() {
-        myVar = setTimeout(showPage, 3100);
-    }
-
-    function showPage() {
+    window.onload = function () {
         document.getElementById("loader").style.display = "none";
         document.getElementById("myDiv").style.display = "block";
-    }
+    };
 </script>
 
 <script src="js/memes.js"></script>

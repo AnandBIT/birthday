@@ -15,15 +15,10 @@ body {
 
 #loader {
     position: absolute;
-    /* left: 50%; */
-    /* top: 50%; */
     z-index: 1;
     width: 100vw;
     height: 100vh;
     background-color: black;
-    /* border: 10px solid lightblue; */
-    /* border-radius: 50%; */
-    /* transform: translate(40%, 0); */
 }
 
 .flashBack {
@@ -36,18 +31,15 @@ body {
 
 /* Add animation to "page content" */
 .animate-bottom {
-    position: relative;
     animation: animatebottom 1s;
 }
 
 @keyframes animatebottom {
     from {
-        bottom: -100px;
         opacity: 0;
     }
 
     to {
-        bottom: 0;
         opacity: 1;
     }
 }
