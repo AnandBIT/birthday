@@ -49,6 +49,8 @@ var btn = $(".popup-btn").click(function (event) {
         $(".popup__box-img").attr("src", "img/meme8.png");
     else if (x == "box-9")
         $(".popup__box-img").attr("src", "img/meme9.png");
+    else if (x == "box-10")
+        $(".popup__box-img").attr("src", "img/meme10.png");
 
     $("#popup__box").addClass("zoomIn");
     $("#popup__box").removeClass("zoomOut");
