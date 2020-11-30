@@ -254,14 +254,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 85%;
-    width: 50%;
+    height: 80%;
+    width: 67%;
     transform: translateY(6%);
 }
 
 .popup__box-background {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 .popup__box-img {
