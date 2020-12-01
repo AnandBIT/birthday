@@ -8,7 +8,7 @@ $(".popup-btn").click(function (event) {
     $(x).removeClass("zoomOut");
 });
 
-$(".close__box").click(function (event) {
+$(".close__box").click(function () {
     $(x).removeClass("zoomIn");
     $(x).addClass("zoomOut");
 });
